@@ -123,6 +123,7 @@ section {
 .aside-links a {
     text-transform: uppercase;
     color: #F8FAFF;
+    text-decoration: none;
 }
 
 #filters {
