@@ -73,6 +73,7 @@
 section {
     align-items: center;
     text-align: center;
+    margin-top: 100px;
 }
 
 .header-left-part {
@@ -122,6 +123,15 @@ section {
 .aside-links a {
     text-transform: uppercase;
     color: #F8FAFF;
+}
+
+#filters {
+    background: linear-gradient(
+        to right,
+        #404F67 200px,
+        #F8FBFF 10% 
+    );
+    padding: 40px 0;
 }
 
 .sale-card-price {
