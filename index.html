@@ -3,55 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Кофе — Орлов Т.А.</title>
+    <!-- <link rel="stylesheet" href="src/coffee/styles.css"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"> -->
 </head>
-
 <body>
-    <header>
-        <div>
-            <h1>ДиноБокс</h1>
+    <header class="flex-row">
+        <div style="width: 35%; position: relative;">
+            <img src="assets/coffee/logo_q50.jpg">
+            <h1 class="text-accent font-display-large">
+                Ваш 
+                <span class="text-beige-background font-display-large">персонализированный</span> 
+                кофе
+            </h1>
         </div>
-        <nav>
+        <img style="width: 50%" src="assets/coffee/photo_q50/banner.jpg">
+        
+        <aside style="background-color: #404F67; color:#F8FAFF; width: 15%;">
+            <img src="assets/coffee/icons_q50/ic_cart.png">
             <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li>Главная страница</li>
+                <li>Кофе</li>
+                <li>Цветные кофе-фильтры</li>
+                <li>Кофе комбо</li>
+                <li>Подарочные наборы</li>
+                <li>Контакты</li>
             </ul>
-        </nav>
+        </aside>
     </header>
-
     <main>
-        <section id="home">
-            <h2>Добро пожаловать!</h2>
-            <p>Это главная страница нашего веб-приложения.</p>
+        <section>
+            <p class="font-body">Ваш персонализированный кофе</p>
+            <h2 class="font-display-medium">Кофе - ваш фундамент</h2>
+            <div class="flex-row">
+                <div style="width: 15%; padding: 0 5%;">
+                    <img src="assets/coffee/icons_q50/ic_1.png">
+                    <h3>Случайный текст похож на старческий скрип Амстердама!</h3>
+                    <p>А ещё предприниматели в сети интернет набирают популярность среди определенных слоев населения, а значит, должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+                </div>
+                <div style="width: 15%; padding: 0 5%;">
+                    <img src="assets/coffee/icons_q50/ic_2.png">
+                    <h3>Господа, спикеры палаты госдумы негодуют</h3>
+                    <p>Кстати, тщательные исследования конкурентов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.</p>
+                </div>
+                <div style="width: 15%; padding: 0 5%;">
+                    <img src="assets/coffee/icons_q50/ic_3.png">
+                    <h3>Воистину радостный звук: старческий скрип Амстердама</h3>
+                    <p>Мы вынуждены отталкиваться от того, что новая модель организационной деятельности позволяет выполнить важные задания по разработке экспериментов, поражающих по своей масштабности и грандиозности.</p>
+                </div>
+                <div style="width: 15%; padding: 0 5%;">
+                    <img src="assets/coffee/icons_q50/ic_4.png">
+                    <h3>Помыслы поколения чисты</h3>
+                    <p>Картельные сговоры не допускают ситуации, при которой диаграммы связей объективно рассмотрены соответствующими инстанциями.</p>
+                </div>
+            </div>
         </section>
-
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Мы компания, которая занимается созданием умных систем контроля климата для террариумов.</p>
+        <section>
+            <p>Выберите любимый сорт</p>
+            <h2>Правильный вкус</h2>
+            <div class="sale-row flex-row">
+                <div class="sale-card flex-row">
+                    <img src="assets/coffee/photo_q50/photo_sale_yellow.jpg">
+                    <div class="sale-info">
+                        <p class="sale-card-price">99.000</p>
+                        <h3 class="sale-card-name">REVO Morning</h3>
+                        <p class="sale-card-description">Описание товара</p>
+                        <div class="sale-card-buttons flex-row">
+                            <div class="sale-card-button button-buy">Купить</div>
+                            <div class="sale-card-button button-show">К товару</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-card flex-row">
+                    <img src="assets/coffee/photo_q50/photo_sale_blue.jpg">
+                    <div class="sale-info">
+                        <p class="sale-card-price">85.000</p>
+                        <h3 class="sale-card-name">REVO Everyday</h3>
+                        <p class="sale-card-description">Описание товара</p>
+                        <div class="sale-card-buttons flex-row">
+                            <div class="sale-card-button button-buy">Купить</div>
+                            <div class="sale-card-button button-show">К товару</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sale-row flex-row">
+                <div class="sale-card flex-row">
+                    <img src="assets/coffee/photo_q50/photo_sale_red.jpg">
+                    <div class="sale-info">
+                        <p class="sale-card-price">139.000</p>
+                        <h3 class="sale-card-name">REVO origin</h3>
+                        <p class="sale-card-description">Описание товара</p>
+                        <div class="sale-card-buttons flex-row">
+                            <div class="sale-card-button button-buy">Купить</div>
+                            <div class="sale-card-button button-show">К товару</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-card flex-row">
+                    <img src="assets/coffee/photo_q50/photo_sale_brown.jpg">
+                    <div class="sale-info">
+                        <p class="sale-card-price">75.000</p>
+                        <h3 class="sale-card-name">REVO Dam da</h3>
+                        <p class="sale-card-description">Описание товара</p>
+                        <div class="sale-card-buttons flex-row">
+                            <div class="sale-card-button button-buy">Купить</div>
+                            <div class="sale-card-button button-show">К товару</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <section id="services">
-            <h2>Наши продукты</h2>
-            <ul>
-                <li>ДиноБокс</li>
-                <li>Модули</li>
-                <li>Декор</li>
-            </ul>
+        <section>
+            <p>Лучший подарок лучшему другу</p>
+            <h2>Подарочные наборы</h2>
+            <div class="giftset flex-row">
+                <img src="assets/coffee/photo_q50/photo_giftset.jpg"> 
+                <div class="giftset-card">
+                    <p class="giftset-card-price">285.000</p>
+                    <h3 class="giftset-card-header">Наш подарочный набор</h3>
+                    <p class="giftset-card-description">С учётом сложившейся международной обстановки, существующая теория предопределяет высокую востребованность экспериментов, поражающих по своей масштабности и грандиозности. Не следует, однако, забывать, что глубокий уровень погружения является качественно новой ступенью направлений прогрессивного развития.</p>
+                    <div class="giftset-card-props flex-row">
+                        <div class="giftset-card-property flex-row">
+                            <img src="assets/coffee/icons_q50/ic_coffee.png">
+                            <div class="giftset-card-property-text">
+                                <p>Свойство</p>
+                                <p>Описание свойства</p>
+                            </div>
+                        </div>
+                        <div class="giftset-card-property flex-row">
+                            <img src="assets/coffee/icons_q50/ic_mountain.png">
+                            <div class="giftset-card-property-text">
+                                <p>Свойство</p>
+                                <p>Описание свойства</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giftset-card-buttons flex-row">
+                            <div class="giftset-card-button button-buy">Купить</div>
+                            <div class="giftset-card-button button-show">К товару</div>
+                    </div>
+                </div>
+                <div class="giftset-choice">
+                    <div class="giftset-choice-element-active">1</div>
+                    <div class="giftset-choice-element">2</div>
+                    <div class="giftset-choice-element">3</div>
+                </div>
+            </div>
         </section>
-
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Email: orlov.t.a@ya.ru</p>
-            <p>Telegram: @orlovta</p>
+        <section>
+            <p>Ваш персонализированный кофе</p>
+            <h2>Комбо с фильтрами</h2>
+            <div class="filtercombo-row flex-row">
+                <div class="filtercombo-card">
+                    <img src="assets/coffee/photo_q50/photo_sale_brown_f.jpg">
+                    <div class="filtercombo-card-content">
+                        <div class="filtercombo-card-prices flex-row">
+                            <p class="filtercombo-card-price">147.000</p>
+                            <p class="filtercombo-card-price-full">155.000</p>
+                        </div>
+                        <h3 class="filtercombo-card-header">Комбо REVO Dam da</h3>
+                        <p class="filtercombo-card-description">Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры способствует подготовке и реализации дальнейших направлений развития.</p>
+                        <div class="filtercombo-card-buttons flex-row">
+                                <div class="filtercombo-card-button button-buy">Купить</div>
+                                <div class="filtercombo-card-button button-show">К товару</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtercombo-card">
+                    <img src="assets/coffee/photo_q50/photo_sale_blue_f.jpg">
+                    <div class="filtercombo-card-content">
+                        <div class="filtercombo-card-prices flex-row">
+                            <p class="filtercombo-card-price">156.000</p>
+                            <p class="filtercombo-card-price-full">165.000</p>
+                        </div>
+                        <h3 class="filtercombo-card-header">Комбо REVO Everyday</h3>
+                        <p class="filtercombo-card-description">С учётом сложившейся международной обстановки, убеждённость некоторых оппонентов способствует повышению качества распределения внутренних резервов и ресурсов.</p>
+                        <div class="filtercombo-card-buttons flex-row">
+                                <div class="filtercombo-card-button button-buy">Купить</div>
+                                <div class="filtercombo-card-button button-show">К товару</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtercombo-card">
+                    <img src="assets/coffee/photo_q50/photo_sale_red_f.jpg">
+                    <div class="filtercombo-card-content">
+                        <div class="filtercombo-card-prices flex-row">
+                            <p class="filtercombo-card-price">275.000</p>
+                            <p class="filtercombo-card-price-full">280.000</p>
+                        </div>
+                        <h3 class="filtercombo-card-header">Комбо REVO Honey</h3>
+                        <p class="filtercombo-card-description">Не следует, однако, забывать, что постоянный количественный рост и сфера нашей активности способствует повышению качества первоочередных требований.</p>
+                        <div class="filtercombo-card-buttons flex-row">
+                                <div class="filtercombo-card-button button-buy">Купить</div>
+                                <div class="filtercombo-card-button button-show">К товару</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Сайт. Все права защищены.</p>
-    </footer>
+    <footer>&#169; Orlov T.A. - 2025</footer>
 </body>
-
 </html>
