@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кофе&nbsp;&mdash; Орлов Т.А.</title>
-    <!-- <link rel="stylesheet" href="src/coffee/styles.css"> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="src/coffee/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="flex-row">
-        <div style="width: 35%; position: relative;">
+        <div class="header-left-part">
             <img src="assets/coffee/logo_q50.jpg" alt="Логотип компании">
             <h1 class="text-accent font-display-large">
                 Ваш 
@@ -21,20 +21,20 @@
         </div>
         <img style="width: 50%" src="assets/coffee/photo_q50/banner.jpg" alt="Основной баннер">
         
-        <aside style="background-color: #404F67; color:#F8FAFF; width: 15%;">
+        <aside class="aside-links">
             <img src="assets/coffee/icons_q50/ic_cart.png" alt="Иконка корзины">
             <ul>
-                <li>Главная страница</li>
-                <li>Кофе</li>
-                <li>Цветные кофе-фильтры</li>
-                <li>Кофе комбо</li>
-                <li>Подарочные наборы</li>
-                <li>Контакты</li>
+                <li><a class="font-body" href="index.html">Главная страница</a></li>
+                <li><a class="font-body" href="#coffee">Кофе</a></li>
+                <li><a class="font-body" href="#filters">Цветные кофе-фильтры</a></li>
+                <li><a class="font-body" href="#combo">Кофе комбо</a></li>
+                <li><a class="font-body" href="#giftset">Подарочные наборы</a></li>
+                <li><a class="font-body" href="#contacts">Контакты</a></li>
             </ul>
         </aside>
     </header>
     <main>
-        <section>
+        <section id="coffee">
             <p class="font-body">Ваш персонализированный кофе</p>
             <h2 class="font-display-medium">Кофе&nbsp;&mdash; ваш фундамент</h2>
             <div class="flex-row">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="filters">
             <p>Выберите любимый сорт</p>
             <h2>Правильный вкус</h2>
             <div class="sale-row flex-row">
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="giftset">
             <p>Лучший подарок лучшему другу</p>
             <h2>Подарочные наборы</h2>
             <div class="giftset flex-row">
@@ -153,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="combo">
             <p>Ваш персонализированный кофе</p>
             <h2>Комбо с фильтрами</h2>
             <div class="filtercombo-row flex-row">
@@ -205,6 +205,6 @@
             </div>
         </section>
     </main>
-    <footer>&copy;&nbsp;Orlov T.A. &mdash;&nbsp;2025</footer>
+    <footer id="contacts">&copy;&nbsp;Orlov T.A. &mdash;&nbsp;2025</footer>
 </body>
 </html>
