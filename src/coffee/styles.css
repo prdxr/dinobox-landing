@@ -95,7 +95,7 @@ section {
     margin-bottom: 20px;
 }
 
-.aside-links {
+.nav-links {
     background-color: #404F67;
     color: #F8FAFF;
     width: 300px;
@@ -106,12 +106,12 @@ section {
     align-items: left;
 }
 
-.aside-links img {
+.nav-links img {
     width: 25px;
     margin-bottom: 30px;
 }
 
-.aside-links ul {
+.nav-links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -120,7 +120,7 @@ section {
     gap: 25px;
 }
 
-.aside-links a {
+.nav-links a {
     text-transform: uppercase;
     color: #F8FAFF;
     text-decoration: none;
