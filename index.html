@@ -10,201 +10,219 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="flex-row">
-        <div class="header-left-part">
-            <img src="assets/coffee/logo_q50.jpg" alt="Логотип компании">
-            <h1 class="text-accent font-display-large">
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header__left">
+            <img class="header__logo" src="assets/coffee/logo_q50.jpg" alt="Логотип компании">
+            <h1 class="header__slogan">
                 Ваш 
-                <span class="text-beige-background font-display-large">персонализированный</span> 
+                <span class="header__slogan-highlight">персонализированный</span> 
                 кофе
             </h1>
         </div>
-        <img style="width: 50%" src="assets/coffee/photo_q50/banner.jpg" alt="Основной баннер">
+        <img class="header__banner" src="assets/coffee/photo_q50/banner.jpg" alt="Основной баннер">
         
-        <nav class="nav-links">
-            <img src="assets/coffee/icons_q50/ic_cart.png" alt="Иконка корзины">
-            <ul>
-                <li><a class="font-body" href="index.html">Главная страница</a></li>
-                <li><a class="font-body" href="#coffee">Кофе</a></li>
-                <li><a class="font-body" href="#filters">Цветные кофе-фильтры</a></li>
-                <li><a class="font-body" href="#combo">Кофе комбо</a></li>
-                <li><a class="font-body" href="#giftset">Подарочные наборы</a></li>
-                <li><a class="font-body" href="#contacts">Контакты</a></li>
+        <nav class="navbar">
+            <img class="navbar__cart-icon" src="assets/coffee/icons_q50/ic_cart.png" alt="Корзина">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="index.html">Главная страница</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#coffee">Кофе</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#filters">Цветные кофе-фильтры</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#combo">Кофе комбо</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#giftset">Подарочные наборы</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="coffee">
-            <p class="font-body">Ваш персонализированный кофе</p>
-            <h2 class="font-display-medium">Кофе&nbsp;&mdash; ваш фундамент</h2>
-            <div class="flex-row">
-                <div style="width: 15%; padding: 0 5%;">
-                    <img src="assets/coffee/icons_q50/ic_1.png" alt="Пиктограмма магазина">
-                    <h3 class="font-title">Случайный текст похож на&nbsp;старческий скрип Амстердама!</h3>
-                    <p class="font-description">А&nbsp;ещё предприниматели в&nbsp;сети интернет набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть заблокированы в&nbsp;рамках своих собственных рациональных ограничений.</p>
-                </div>
-                <div style="width: 15%; padding: 0 5%;">
-                    <img src="assets/coffee/icons_q50/ic_2.png" alt="Пиктограмма стэнда">
-                    <h3 class="font-title">Господа, спикеры палаты госдумы негодуют</h3>
-                    <p class="font-description">Кстати, тщательные исследования конкурентов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности.</p>
-                </div>
-                <div style="width: 15%; padding: 0 5%;">
-                    <img src="assets/coffee/icons_q50/ic_3.png" alt="Пиктограмма стаканов">
-                    <h3 class="font-title">Воистину радостный звук: старческий скрип Амстердама</h3>
-                    <p class="font-description">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что новая модель организационной деятельности позволяет выполнить важные задания по&nbsp;разработке экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности.</p>
-                </div>
-                <div style="width: 15%; padding: 0 5%;">
-                    <img src="assets/coffee/icons_q50/ic_4.png" alt="Пиктограмма кофемашины">
-                    <h3 class="font-title">Помыслы поколения чисты</h3>
-                    <p class="font-description">Картельные сговоры не&nbsp;допускают ситуации, при которой диаграммы связей объективно рассмотрены соответствующими инстанциями.</p>
-                </div>
+        <!-- ===== SECTION: COFFEE ===== -->
+        <section id="coffee" class="section">
+            <p class="section__subtitle">Ваш персонализированный кофе</p>
+            <h2 class="section__title">Кофе&nbsp;&mdash; ваш фундамент</h2>
+            <div class="section__content">
+                <article class="feature">
+                    <img class="feature__icon" src="assets/coffee/icons_q50/ic_1.png" alt="Пиктограмма магазина">
+                    <h3 class="feature__title">Случайный текст похож на&nbsp;старческий скрип Амстердама!</h3>
+                    <p class="feature__text">А&nbsp;ещё предприниматели в&nbsp;сети интернет набирают популярность среди определенных слоев населения.</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__icon" src="assets/coffee/icons_q50/ic_2.png" alt="Пиктограмма стэнда">
+                    <h3 class="feature__title">Господа, спикеры палаты госдумы негодуют</h3>
+                    <p class="feature__text">Кстати, тщательные исследования конкурентов призывают нас к&nbsp;новым свершениям.</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__icon" src="assets/coffee/icons_q50/ic_3.png" alt="Пиктограмма стаканов">
+                    <h3 class="feature__title">Воистину радостный звук: старческий скрип Амстердама</h3>
+                    <p class="feature__text">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что новая модель организационной деятельности позволяет выполнить важные задания.</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__icon" src="assets/coffee/icons_q50/ic_4.png" alt="Пиктограмма кофемашины">
+                    <h3 class="feature__title">Помыслы поколения чисты</h3>
+                    <p class="feature__text">Картельные сговоры не&nbsp;допускают ситуации, при которой диаграммы связей объективно рассмотрены.</p>
+                </article>
             </div>
         </section>
-        <section id="filters">
-            <p class="font-body">Выберите любимый сорт</p>
-            <h2 class="font-display-medium">Правильный вкус</h2>
-            <div class="sale-row flex-row">
-                <div class="sale-card flex-row">
-                    <img src="assets/coffee/photo_q50/photo_sale_yellow.jpg" alt="Кофе Morning">
-                    <div class="sale-info">
-                        <p class="sale-card-price">99.000</p>
-                        <h3 class="sale-card-name">REVO Morning</h3>
-                        <p class="sale-card-description">Описание товара</p>
-                        <div class="sale-card-buttons flex-row">
-                            <div class="sale-card-button button-buy">Купить</div>
-                            <div class="sale-card-button button-show">К товару</div>
+
+        <!-- ===== SECTION: FILTERS ===== -->
+        <section id="filters" class="section section--filters">
+            <p class="section__subtitle">Выберите любимый сорт</p>
+            <h2 class="section__title">Правильный вкус</h2>
+            
+            <div class="section__content--grid">
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/coffee/photo_q50/photo_sale_yellow.jpg" alt="Кофе Morning">
+                    <div class="product-card__info">
+                        <p class="product-card__price">99.000</p>
+                        <h3 class="product-card__title">REVO Morning</h3>
+                        <p class="product-card__description">Описание товара</p>
+                        <div class="product-card__buttons">
+                            <button class="button button--primary">Купить</button>
+                            <button class="button button--secondary">К товару</button>
                         </div>
                     </div>
-                </div>
-                <div class="sale-card flex-row">
-                    <img src="assets/coffee/photo_q50/photo_sale_blue.jpg" alt="Кофе Everyday">
-                    <div class="sale-info">
-                        <p class="sale-card-price">85.000</p>
-                        <h3 class="sale-card-name">REVO Everyday</h3>
-                        <p class="sale-card-description">Описание товара</p>
-                        <div class="sale-card-buttons flex-row">
-                            <div class="sale-card-button button-buy">Купить</div>
-                            <div class="sale-card-button button-show">К товару</div>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/coffee/photo_q50/photo_sale_blue.jpg" alt="Кофе Everyday">
+                    <div class="product-card__info">
+                        <p class="product-card__price">85.000</p>
+                        <h3 class="product-card__title">REVO Everyday</h3>
+                        <p class="product-card__description">Описание товара</p>
+                        <div class="product-card__buttons">
+                            <button class="button button--primary">Купить</button>
+                            <button class="button button--secondary">К товару</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="sale-row flex-row">
-                <div class="sale-card flex-row">
-                    <img src="assets/coffee/photo_q50/photo_sale_red.jpg" alt="Кофе Origin">
-                    <div class="sale-info">
-                        <p class="sale-card-price">139.000</p>
-                        <h3 class="sale-card-name">REVO origin</h3>
-                        <p class="sale-card-description">Описание товара</p>
-                        <div class="sale-card-buttons flex-row">
-                            <div class="sale-card-button button-buy">Купить</div>
-                            <div class="sale-card-button button-show">К товару</div>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/coffee/photo_q50/photo_sale_red.jpg" alt="Кофе Origin">
+                    <div class="product-card__info">
+                        <p class="product-card__price">139.000</p>
+                        <h3 class="product-card__title">REVO Origin</h3>
+                        <p class="product-card__description">Описание товара</p>
+                        <div class="product-card__buttons">
+                            <button class="button button--primary">Купить</button>
+                            <button class="button button--secondary">К товару</button>
                         </div>
                     </div>
-                </div>
-                <div class="sale-card flex-row">
-                    <img src="assets/coffee/photo_q50/photo_sale_brown.jpg" alt="Кофе Dam da">
-                    <div class="sale-info">
-                        <p class="sale-card-price">75.000</p>
-                        <h3 class="sale-card-name">REVO Dam da</h3>
-                        <p class="sale-card-description">Описание товара</p>
-                        <div class="sale-card-buttons flex-row">
-                            <div class="sale-card-button button-buy">Купить</div>
-                            <div class="sale-card-button button-show">К товару</div>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/coffee/photo_q50/photo_sale_brown.jpg" alt="Кофе Dam da">
+                    <div class="product-card__info">
+                        <p class="product-card__price">75.000</p>
+                        <h3 class="product-card__title">REVO Dam da</h3>
+                        <p class="product-card__description">Описание товара</p>
+                        <div class="product-card__buttons">
+                            <button class="button button--primary">Купить</button>
+                            <button class="button button--secondary">К товару</button>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
-        <section id="giftset">
-            <p class="font-body">Лучший подарок лучшему другу</p>
-            <h2 class="font-display-medium">Подарочные наборы</h2>
-            <div class="giftset flex-row">
-                <img src="assets/coffee/photo_q50/photo_giftset.jpg" alt="Подарочный набор"> 
-                <div class="giftset-card">
-                    <p class="giftset-card-price">285.000</p>
-                    <h3 class="giftset-card-header">Наш подарочный набор</h3>
-                    <p class="giftset-card-description">С&nbsp;учётом сложившейся международной обстановки, существующая теория предопределяет высокую востребованность экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. Не&nbsp;следует, однако, забывать, что глубокий уровень погружения является качественно новой ступенью направлений прогрессивного развития.</p>
-                    <div class="giftset-card-props flex-row">
-                        <div class="giftset-card-property flex-row">
-                            <img src="assets/coffee/icons_q50/ic_coffee.png" alt="Иконка кофе">
-                            <div class="giftset-card-property-text">
-                                <p>Свойство</p>
-                                <p>Описание свойства</p>
+
+        <!-- ===== SECTION: GIFTSET ===== -->
+        <section id="giftset" class="section section--giftset">
+            <p class="section__subtitle">Лучший подарок лучшему другу</p>
+            <h2 class="section__title">Подарочные наборы</h2>
+            
+            <div class="giftset">
+                <img class="giftset__image" src="assets/coffee/photo_q50/photo_giftset.jpg" alt="Подарочный набор">
+                
+                <div class="giftset__card">
+                    <p class="giftset__price">285.000</p>
+                    <h3 class="giftset__title">Наш подарочный набор</h3>
+                    <p class="giftset__description">С&nbsp;учётом сложившейся международной обстановки, существующая теория предопределяет высокую востребованность экспериментов.</p>
+                    
+                    <div class="giftset__props">
+                        <div class="giftset__prop">
+                            <img class="giftset__prop-icon" src="assets/coffee/icons_q50/ic_coffee.png" alt="Кофе">
+                            <div class="giftset__prop-info">
+                                <p class="giftset__prop-label">Свойство</p>
+                                <p class="giftset__prop-value">Описание свойства</p>
                             </div>
                         </div>
-                        <div class="giftset-card-property flex-row">
-                            <img src="assets/coffee/icons_q50/ic_mountain.png" alt="Иконка горы">
-                            <div class="giftset-card-property-text">
-                                <p>Свойство</p>
-                                <p>Описание свойства</p>
+                        <div class="giftset__prop">
+                            <img class="giftset__prop-icon" src="assets/coffee/icons_q50/ic_mountain.png" alt="Гора">
+                            <div class="giftset__prop-info">
+                                <p class="giftset__prop-label">Свойство</p>
+                                <p class="giftset__prop-value">Описание свойства</p>
                             </div>
                         </div>
                     </div>
-                    <div class="giftset-card-buttons flex-row">
-                            <div class="giftset-card-button button-buy">Купить</div>
-                            <div class="giftset-card-button button-show">К товару</div>
+                    
+                    <div class="giftset__buttons">
+                        <button class="button button--primary">Купить</button>
+                        <button class="button button--secondary">К товару</button>
                     </div>
                 </div>
-                <div class="giftset-choice">
-                    <div class="giftset-choice-element-active">1</div>
-                    <div class="giftset-choice-element">2</div>
-                    <div class="giftset-choice-element">3</div>
+                
+                <div class="giftset__nav">
+                    <button class="giftset__nav-item giftset__nav-item--active">1</button>
+                    <button class="giftset__nav-item">2</button>
+                    <button class="giftset__nav-item">3</button>
                 </div>
             </div>
         </section>
-        <section id="combo">
-            <p class="font-body">Ваш персонализированный кофе</p>
-            <h2 class="font-display-medium">Комбо с фильтрами</h2>
-            <div class="filtercombo-row flex-row">
-                <div class="filtercombo-card">
-                    <img src="assets/coffee/photo_q50/photo_sale_brown_f.jpg" alt="Комбо Dam da">
-                    <div class="filtercombo-card-content">
-                        <div class="filtercombo-card-prices flex-row">
-                            <p class="filtercombo-card-price">147.000</p>
-                            <p class="filtercombo-card-price-full">155.000</p>
+
+        <!-- ===== SECTION: COMBO ===== -->
+        <section id="combo" class="section section--combo">
+            <p class="section__subtitle">Ваш персонализированный кофе</p>
+            <h2 class="section__title">Комбо с фильтрами</h2>
+            
+            <div class="section__content">
+                <article class="combo-card">
+                    <img class="combo-card__image" src="assets/coffee/photo_q50/photo_sale_brown_f.jpg" alt="Комбо Dam da">
+                    <div class="combo-card__info">
+                        <div class="combo-card__prices">
+                            <p class="combo-card__price">147.000</p>
+                            <p class="combo-card__price combo-card__price--old">155.000</p>
                         </div>
-                        <h3 class="filtercombo-card-header">Комбо &laquo;REVO Dam&nbsp;da&raquo;</h3>
-                        <p class="filtercombo-card-description">Идейные соображения высшего порядка, а&nbsp;также укрепление и&nbsp;развитие внутренней структуры способствует подготовке и&nbsp;реализации дальнейших направлений развития.</p>
-                        <div class="filtercombo-card-buttons flex-row">
-                                <div class="filtercombo-card-button button-buy">Купить</div>
-                                <div class="filtercombo-card-button button-show">К товару</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="filtercombo-card">
-                    <img src="assets/coffee/photo_q50/photo_sale_blue_f.jpg" alt="Комбо Everyday">
-                    <div class="filtercombo-card-content">
-                        <div class="filtercombo-card-prices flex-row">
-                            <p class="filtercombo-card-price">156.000</p>
-                            <p class="filtercombo-card-price-full">165.000</p>
-                        </div>
-                        <h3 class="filtercombo-card-header">Комбо &laquo;REVO Everyday&raquo;</h3>
-                        <p class="filtercombo-card-description">С&nbsp;учётом сложившейся международной обстановки, убеждённость некоторых оппонентов способствует повышению качества распределения внутренних резервов и&nbsp;ресурсов.</p>
-                        <div class="filtercombo-card-buttons flex-row">
-                                <div class="filtercombo-card-button button-buy">Купить</div>
-                                <div class="filtercombo-card-button button-show">К товару</div>
+                        <h3 class="combo-card__title">Комбо «REVO Dam&nbsp;da»</h3>
+                        <p class="combo-card__description">Идейные соображения высшего порядка, а&nbsp;также укрепление и&nbsp;развитие внутренней структуры.</p>
+                        <div class="combo-card__buttons">
+                            <button class="button button--primary">Купить</button>
+                            <button class="button button--secondary">К товару</button>
                         </div>
                     </div>
-                </div>
-                <div class="filtercombo-card">
-                    <img src="assets/coffee/photo_q50/photo_sale_red_f.jpg" alt="Комбо Honey">
-                    <div class="filtercombo-card-content">
-                        <div class="filtercombo-card-prices flex-row">
-                            <p class="filtercombo-card-price">275.000</p>
-                            <p class="filtercombo-card-price-full">280.000</p>
+                </article>
+                <article class="combo-card">
+                    <img class="combo-card__image" src="assets/coffee/photo_q50/photo_sale_blue_f.jpg" alt="Комбо Everyday">
+                    <div class="combo-card__info">
+                        <div class="combo-card__prices">
+                            <p class="combo-card__price">156.000</p>
+                            <p class="combo-card__price combo-card__price--old">165.000</p>
                         </div>
-                        <h3 class="filtercombo-card-header">Комбо &laquo;REVO Honey&raquo;</h3>
-                        <p class="filtercombo-card-description">Не&nbsp;следует, однако, забывать, что постоянный количественный рост и&nbsp;сфера нашей активности способствует повышению качества первоочередных требований.</p>
-                        <div class="filtercombo-card-buttons flex-row">
-                                <div class="filtercombo-card-button button-buy">Купить</div>
-                                <div class="filtercombo-card-button button-show">К товару</div>
+                        <h3 class="combo-card__title">Комбо «REVO Everyday»</h3>
+                        <p class="combo-card__description">С&nbsp;учётом сложившейся международной обстановки, убеждённость некоторых оппонентов.</p>
+                        <div class="combo-card__buttons">
+                            <button class="button button--primary">Купить</button>
+                            <button class="button button--secondary">К товару</button>
                         </div>
                     </div>
-                </div>
+                </article>
+                <article class="combo-card">
+                    <img class="combo-card__image" src="assets/coffee/photo_q50/photo_sale_red_f.jpg" alt="Комбо Honey">
+                    <div class="combo-card__info">
+                        <div class="combo-card__prices">
+                            <p class="combo-card__price">275.000</p>
+                            <p class="combo-card__price combo-card__price--old">280.000</p>
+                        </div>
+                        <h3 class="combo-card__title">Комбо «REVO Honey»</h3>
+                        <p class="combo-card__description">Не&nbsp;следует, однако, забывать, что постоянный количественный рост.</p>
+                        <div class="combo-card__buttons">
+                            <button class="button button--primary">Купить</button>
+                            <button class="button button--secondary">К товару</button>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
-    <footer id="contacts">&copy;&nbsp;Orlov T.A. &mdash;&nbsp;2025</footer>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contacts" class="footer">
+        <p class="footer__text">&copy;&nbsp;Orlov T.A. &mdash;&nbsp;2025</p>
+    </footer>
 </body>
 </html>
