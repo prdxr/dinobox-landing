@@ -22,10 +22,20 @@
         </div>
         <img class="header__banner" src="assets/coffee/photo_q50/banner.jpg" alt="Основной баннер">
         
+        <input type="checkbox" id="menu-toggle" class="menu-toggle__checkbox" aria-label="Открыть меню">
+        
+        <label for="menu-toggle" class="menu-toggle">
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+        </label>
+        
+        <label for="menu-toggle" class="menu-overlay"></label>
+
         <nav class="navbar">
             <img class="navbar__cart-icon" src="assets/coffee/icons_q50/ic_cart.png" alt="Корзина">
             <ul class="navbar__list">
-                <li class="navbar__item"><a class="navbar__link" href="index.html">Главная страница</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Главная страница</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="#coffee">Кофе</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="#filters">Цветные кофе-фильтры</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="#combo">Кофе комбо</a></li>
@@ -33,6 +43,9 @@
                 <li class="navbar__item"><a class="navbar__link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
+
+        <!-- Кнопка CTA (только для десктопа) -->
+        <button class="button button--primary navbar__cta">Заказать</button>
     </header>
 
     <main>
@@ -224,5 +237,9 @@
     <footer id="contacts" class="footer">
         <p class="footer__text">&copy;&nbsp;Orlov T.A. &mdash;&nbsp;2025</p>
     </footer>
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
+    <script src="src/coffee/scripts/menu.js"></script>
 </body>
 </html>
