@@ -5,4 +5,4 @@
 
 ## Ссылки
 - [Публичная страница на GitHub Pages](https://prdxr.github.io/dinobox-landing/)
-[QR-код](./Orlov_T_A-DinoBox-landing.svg)
+<img src="./Orlov_T_A-DinoBox-landing.svg">
