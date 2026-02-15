@@ -12,6 +12,10 @@
     --bulma-dark: #424242;
 }
 
+nav {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
 #main {
     background-image: url('./assets/hero-background.png');
     background-size: cover;
@@ -40,6 +44,10 @@
     margin-bottom: 5rem;
     color: var(--bulma-scheme-main);
     border-radius: 4px;
+}
+
+.navbar-menu a {
+    color: var(--bulma-dark)
 }
 
 .navbar-burger {
@@ -155,7 +163,7 @@
   padding: 1.2rem 1.5rem;
   cursor: pointer;
   transition: background-color 0.2s, box-shadow 0.2s;
-  border-left: 4px solid transparent; /* место под активную полоску */
+  border-left: 4px solid transparent;
 }
 
 .tab-item:hover {
@@ -270,4 +278,98 @@
 .faq-link:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+
+.partner-info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.partner-logo {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.partner-logo img {
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.partner-text {
+  flex: 1;
+}
+
+.partner-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--bulma-dark);
+}
+
+.partner-description {
+  font-size: 1rem;
+  color: var(--bulma-dark);
+  line-height: 1.5;
+}
+
+.partner-photo {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.partner-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--bulma-dark);
+  margin-bottom: 0.5rem;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--bulma-green);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+  word-break: break-all;
+}
+
+.contact-email:hover {
+  border-bottom-color: var(--bulma-green);
+}
+
+#contact .button.is-large {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  color: var(--bulma-scheme-main);
+  background-color: var(--bulma-green);
+}
+
+.footer {
+  background-color: var(--bulma-dark);
+  padding: 2rem 1.5rem;
+}
+
+.footer p {
+  color: var(--bulma-scheme-main);
+  font-size: 0.95rem;
+  opacity: 0.8;
 }
