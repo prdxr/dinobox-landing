@@ -1,245 +1,260 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кофе&nbsp;&mdash; Орлов Т.А.</title>
-    <link rel="stylesheet" href="src/coffee/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- ===== HEADER ===== -->
-    <header class="header">
-        <div class="header__left">
-            <img class="header__logo" src="assets/coffee/logo_q50.jpg" alt="Логотип компании">
-            <h1 class="header__slogan">
-                Ваш 
-                <span class="header__slogan-highlight">персонализированный</span> 
-                кофе
-            </h1>
-        </div>
-        <img class="header__banner" src="assets/coffee/photo_q50/banner.jpg" alt="Основной баннер">
-        
-        <input type="checkbox" id="menu-toggle" class="menu-toggle__checkbox" aria-label="Открыть меню">
-        
-        <label for="menu-toggle" class="menu-toggle">
-            <span class="menu-toggle__line"></span>
-            <span class="menu-toggle__line"></span>
-            <span class="menu-toggle__line"></span>
-        </label>
-        
-        <label for="menu-toggle" class="menu-overlay"></label>
-
-        <nav class="navbar">
-            <img class="navbar__cart-icon" src="assets/coffee/icons_q50/ic_cart.png" alt="Корзина">
-            <ul class="navbar__list">
-                <li class="navbar__item"><a class="navbar__link" href="#">Главная страница</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#coffee">Кофе</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#filters">Цветные кофе-фильтры</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#combo">Кофе комбо</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#giftset">Подарочные наборы</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#contacts">Контакты</a></li>
-            </ul>
+<html data-theme="light" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ДиноБокс - умные системы для террариумов</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar is-fixed-top" aria-label="Основная навигация">
+            <div class="navbar-brand">
+                <a class="navbar-item py-0" href="/#main">
+                    <img src="assets/dinobox-logo.png" alt="Логотип">
+                </a>
+                <a class="navbar-item" href="/#main">
+                    <span class="title is-5">ДиноБокс</span>
+                </a>
+                <div class="navbar-burger" role="button" aria-label="Меню" aria-expanded="false">
+                  <span class="navbar-burger-line" aria-hidden="true"></span>
+                  <span class="navbar-burger-line" aria-hidden="true"></span>
+                  <span class="navbar-burger-line" aria-hidden="true"></span>
+                  <span class="navbar-burger-line" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="navbar-menu navbar-start">
+                <a class="navbar-item" href="#about">О проекте</a>
+                <a class="navbar-item" href="#products">Продукты</a>
+                <a class="navbar-item" href="#faq">ЧаВо</a>
+                <a class="navbar-item" href="#contact">Контакты</a>
+            </div>
         </nav>
-
-        <!-- Кнопка CTA (только для десктопа) -->
-        <button class="button button--primary navbar__cta">Заказать</button>
     </header>
-
-    <main>
-        <!-- ===== SECTION: COFFEE ===== -->
-        <section id="coffee" class="section">
-            <p class="section__subtitle">Ваш персонализированный кофе</p>
-            <h2 class="section__title">Кофе&nbsp;&mdash; ваш фундамент</h2>
-            <div class="section__content">
-                <article class="feature">
-                    <img class="feature__icon" src="assets/coffee/icons_q50/ic_1.png" alt="Пиктограмма магазина">
-                    <h3 class="feature__title">Случайный текст похож на&nbsp;старческий скрип Амстердама!</h3>
-                    <p class="feature__text">А&nbsp;ещё предприниматели в&nbsp;сети интернет набирают популярность среди определенных слоев населения.</p>
-                </article>
-                <article class="feature">
-                    <img class="feature__icon" src="assets/coffee/icons_q50/ic_2.png" alt="Пиктограмма стэнда">
-                    <h3 class="feature__title">Господа, спикеры палаты госдумы негодуют</h3>
-                    <p class="feature__text">Кстати, тщательные исследования конкурентов призывают нас к&nbsp;новым свершениям.</p>
-                </article>
-                <article class="feature">
-                    <img class="feature__icon" src="assets/coffee/icons_q50/ic_3.png" alt="Пиктограмма стаканов">
-                    <h3 class="feature__title">Воистину радостный звук: старческий скрип Амстердама</h3>
-                    <p class="feature__text">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что новая модель организационной деятельности позволяет выполнить важные задания.</p>
-                </article>
-                <article class="feature">
-                    <img class="feature__icon" src="assets/coffee/icons_q50/ic_4.png" alt="Пиктограмма кофемашины">
-                    <h3 class="feature__title">Помыслы поколения чисты</h3>
-                    <p class="feature__text">Картельные сговоры не&nbsp;допускают ситуации, при которой диаграммы связей объективно рассмотрены.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- ===== SECTION: FILTERS ===== -->
-        <section id="filters" class="section section--filters">
-            <p class="section__subtitle">Выберите любимый сорт</p>
-            <h2 class="section__title">Правильный вкус</h2>
-            
-            <div class="section__content--grid">
-                <article class="product-card">
-                    <img class="product-card__image" src="assets/coffee/photo_q50/photo_sale_yellow.jpg" alt="Кофе Morning">
-                    <div class="product-card__info">
-                        <p class="product-card__price">99.000</p>
-                        <h3 class="product-card__title">REVO Morning</h3>
-                        <p class="product-card__description">Описание товара</p>
-                        <div class="product-card__buttons">
-                            <button class="button button--primary">Купить</button>
-                            <button class="button button--secondary">К товару</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img class="product-card__image" src="assets/coffee/photo_q50/photo_sale_blue.jpg" alt="Кофе Everyday">
-                    <div class="product-card__info">
-                        <p class="product-card__price">85.000</p>
-                        <h3 class="product-card__title">REVO Everyday</h3>
-                        <p class="product-card__description">Описание товара</p>
-                        <div class="product-card__buttons">
-                            <button class="button button--primary">Купить</button>
-                            <button class="button button--secondary">К товару</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img class="product-card__image" src="assets/coffee/photo_q50/photo_sale_red.jpg" alt="Кофе Origin">
-                    <div class="product-card__info">
-                        <p class="product-card__price">139.000</p>
-                        <h3 class="product-card__title">REVO Origin</h3>
-                        <p class="product-card__description">Описание товара</p>
-                        <div class="product-card__buttons">
-                            <button class="button button--primary">Купить</button>
-                            <button class="button button--secondary">К товару</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img class="product-card__image" src="assets/coffee/photo_q50/photo_sale_brown.jpg" alt="Кофе Dam da">
-                    <div class="product-card__info">
-                        <p class="product-card__price">75.000</p>
-                        <h3 class="product-card__title">REVO Dam da</h3>
-                        <p class="product-card__description">Описание товара</p>
-                        <div class="product-card__buttons">
-                            <button class="button button--primary">Купить</button>
-                            <button class="button button--secondary">К товару</button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- ===== SECTION: GIFTSET ===== -->
-        <section id="giftset" class="section section--giftset">
-            <p class="section__subtitle">Лучший подарок лучшему другу</p>
-            <h2 class="section__title">Подарочные наборы</h2>
-            
-            <div class="giftset">
-                <img class="giftset__image" src="assets/coffee/photo_q50/photo_giftset.jpg" alt="Подарочный набор">
-                
-                <div class="giftset__card">
-                    <p class="giftset__price">285.000</p>
-                    <h3 class="giftset__title">Наш подарочный набор</h3>
-                    <p class="giftset__description">С&nbsp;учётом сложившейся международной обстановки, существующая теория предопределяет высокую востребованность экспериментов.</p>
-                    
-                    <div class="giftset__props">
-                        <div class="giftset__prop">
-                            <img class="giftset__prop-icon" src="assets/coffee/icons_q50/ic_coffee.png" alt="Кофе">
-                            <div class="giftset__prop-info">
-                                <p class="giftset__prop-label">Свойство</p>
-                                <p class="giftset__prop-value">Описание свойства</p>
-                            </div>
-                        </div>
-                        <div class="giftset__prop">
-                            <img class="giftset__prop-icon" src="assets/coffee/icons_q50/ic_mountain.png" alt="Гора">
-                            <div class="giftset__prop-info">
-                                <p class="giftset__prop-label">Свойство</p>
-                                <p class="giftset__prop-value">Описание свойства</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="giftset__buttons">
-                        <button class="button button--primary">Купить</button>
-                        <button class="button button--secondary">К товару</button>
-                    </div>
+    <section id="main" class="hero is-fullheight">
+      <div class="hero-body has-text-left">
+        <h1 class="title is-1 hero-header">
+          ДиноБокс: модульная система контроля климата
+        </h1>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered">Что такое ДиноБокс?</h2>
+      
+        <div class="columns is-vcentered">
+          <div class="column">
+            <h3 class="subtitle is-4">Это умная система для ваших питомцев</h3>
+            <p class="py-2">
+              Она представляет собой модульное устройство для автоматизации мониторинга террариумов.
+            </p>
+            <p class="py-2">
+              ДиноБокс измеряет выбранные параметры, например температуру или влажность воздуха, и сохраняет на сервере историю изменения климата.
+            </p>
+            <a href="/about" class="about-link">Подробнее →</a>
+          </div>
+        
+          <div class="column">
+            <figure class="image">
+              <img src="./assets/about-photo.png" alt="Устройство ДиноБокс">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits" class="section has-background-beige">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered">Наши преимущества</h2>
+        <div class="columns">
+          <div class="column align-center">
+            <figure class="image p-5 pictogram-feature">
+              <img src="./assets/features-combine.png" aria-label="Комбинируемость">
+            </figure>
+            <h3 class="title is-5 has-text-centered">Комбинируемость</h3>
+            <p>
+              Можно использовать любые комбинации модулей.
+            </p>
+          </div>
+          <div class="column align-center">
+            <figure class="image p-5 pictogram-feature">
+              <img src="./assets/features-unite.png" aria-label="Комбинируемость">
+            </figure>
+            <h3 class="title is-5 has-text-centered">Единый интерфейс</h3>
+            <p>
+              Управление устройствами ДиноБокс через веб-панель на десктопе или телефоне.
+            </p>
+          </div>
+          <div class="column align-center">
+            <figure class="image p-5 pictogram-feature">
+              <img src="./assets/features-scale.png" aria-label="Комбинируемость">
+            </figure>
+            <h3 class="title is-5 has-text-centered">Масштабируемость</h3>
+            <p>
+              Сервер ДиноБокс поддерживает одновременную работу десятков умных террариумов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products" class="section products-section">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered">Наши продукты</h2>
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <div class="product-card">
+              <div class="columns is-vcentered">
+                <div class="column is-5">
+                  <figure class="image">
+                    <img src="./assets/product-hub.png" alt="Продукт 1">
+                  </figure>
                 </div>
-                
-                <div class="giftset__nav">
-                    <button class="giftset__nav-item giftset__nav-item--active">1</button>
-                    <button class="giftset__nav-item">2</button>
-                    <button class="giftset__nav-item">3</button>
+                <div class="column">
+                  <h3 class="subtitle is-4">ДиноБокс Хаб</h3>
+                  <p class="product-description">
+                    Основное устройство. Читает данные с подключенных сенсор-модулей и управляет подключенными менеджмент-модулями
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- ===== SECTION: COMBO ===== -->
-        <section id="combo" class="section section--combo">
-            <p class="section__subtitle">Ваш персонализированный кофе</p>
-            <h2 class="section__title">Комбо с фильтрами</h2>
-            
-            <div class="section__content">
-                <article class="combo-card">
-                    <img class="combo-card__image" src="assets/coffee/photo_q50/photo_sale_brown_f.jpg" alt="Комбо Dam da">
-                    <div class="combo-card__info">
-                        <div class="combo-card__prices">
-                            <p class="combo-card__price">147.000</p>
-                            <p class="combo-card__price combo-card__price--old">155.000</p>
-                        </div>
-                        <h3 class="combo-card__title">Комбо «REVO Dam&nbsp;da»</h3>
-                        <p class="combo-card__description">Идейные соображения высшего порядка, а&nbsp;также укрепление и&nbsp;развитие внутренней структуры.</p>
-                        <div class="combo-card__buttons">
-                            <button class="button button--primary">Купить</button>
-                            <button class="button button--secondary">К товару</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="combo-card">
-                    <img class="combo-card__image" src="assets/coffee/photo_q50/photo_sale_blue_f.jpg" alt="Комбо Everyday">
-                    <div class="combo-card__info">
-                        <div class="combo-card__prices">
-                            <p class="combo-card__price">156.000</p>
-                            <p class="combo-card__price combo-card__price--old">165.000</p>
-                        </div>
-                        <h3 class="combo-card__title">Комбо «REVO Everyday»</h3>
-                        <p class="combo-card__description">С&nbsp;учётом сложившейся международной обстановки, убеждённость некоторых оппонентов.</p>
-                        <div class="combo-card__buttons">
-                            <button class="button button--primary">Купить</button>
-                            <button class="button button--secondary">К товару</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="combo-card">
-                    <img class="combo-card__image" src="assets/coffee/photo_q50/photo_sale_red_f.jpg" alt="Комбо Honey">
-                    <div class="combo-card__info">
-                        <div class="combo-card__prices">
-                            <p class="combo-card__price">275.000</p>
-                            <p class="combo-card__price combo-card__price--old">280.000</p>
-                        </div>
-                        <h3 class="combo-card__title">Комбо «REVO Honey»</h3>
-                        <p class="combo-card__description">Не&nbsp;следует, однако, забывать, что постоянный количественный рост.</p>
-                        <div class="combo-card__buttons">
-                            <button class="button button--primary">Купить</button>
-                            <button class="button button--secondary">К товару</button>
-                        </div>
-                    </div>
-                </article>
+          </div>
+        </div>
+        <div class="dots-container">
+          <span class="dot is-active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="catalog-link-wrapper">
+          <a href="/products" class="catalog-link">В каталог →</a>
+        </div>
+      </div>
+    </section>
+    <section id="tabs-section" class="section has-background-green">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered">Как это работает</h2>
+        <div class="columns is-vcentered is-desktop">
+          <div class="column is-4 align-center">
+            <figure class="image guide-image">
+              <img src="./assets/guide-assemble.png" alt="Изображение для первого таба" id="tab-image">
+            </figure>
+          </div>
+          <div class="column is-8">
+            <ul class="vertical-tabs">
+              <li class="tab-item is-active" data-tab="1">
+                <div class="tab-content">
+                  <h3 class="tab-title">1. Подготовьте устройство</h3>
+                  <p class="tab-description">Подключите нужные вам модули к хабу.</p>
+                </div>
+              </li>
+              <li class="tab-item" data-tab="2">
+                <div class="tab-content">
+                  <h3 class="tab-title">2. Подключите хаб к WiFi</h3>
+                  <p class="tab-description">Чтобы сервер мог обнаружить его в локальной сети.</p>
+                </div>
+              </li>
+              <li class="tab-item" data-tab="3">
+                <div class="tab-content">
+                  <h3 class="tab-title">3. Скачайте ПО сервера</h3>
+                  <p class="tab-description">В качестве хоста подойдёт Windows и Linux.</p>
+                </div>
+              </li>
+              <li class="tab-item" data-tab="4">
+                <div class="tab-content">
+                  <h3 class="tab-title">4. Найдите хаб в веб-панели</h3>
+                  <p class="tab-description">Нажмите кнопку сканирования, чтобы хаб добавился сам.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered">Частые вопросы</h2>
+        <div class="faq-list">
+          <label class="faq-item">
+            <input type="checkbox" class="faq-toggle">
+            <div class="faq-header">
+              <span class="faq-triangle">▶</span>
+              <span class="faq-question">Каким животным подойдёт ДиноБокс?</span>
             </div>
-        </section>
-    </main>
+            <div class="faq-answer">
+              <p>
+                Текущая модель хаба ДиноБокс предназначена для террариумных животных: змей, ящериц, черепах, амфибий и членистоногих.
+              </p>
+            </div>
+          </label>
+          <label class="faq-item">
+            <input type="checkbox" class="faq-toggle">
+            <div class="faq-header">
+              <span class="faq-triangle">▶</span>
+              <span class="faq-question">Какие бывают комплектации системы?</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                фыв
+              </p>
+            </div>
+          </label>
+          <label class="faq-item">
+            <input type="checkbox" class="faq-toggle">
+            <div class="faq-header">
+              <span class="faq-triangle">▶</span>
+              <span class="faq-question">Для какого количества животных подойдёт ДиноБокс?</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                фыв
+              </p>
+            </div>
+          </label>
+        </div>
+        <div class="faq-more">
+          <a href="/faq" class="faq-link">Другие вопросы →</a>
+        </div>
+      </div>
+    </section>
+    <section id="partners" class="section has-background-beige">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered">Наши партнёры</h2>
+        <div class="columns is-vcentered">
+          <div class="column is-7">
+            <div class="partner-info">
+              <figure class="partner-logo">
+                <img src="assets/partner-logo-1.jpg" alt="Логотип партнёра">
+              </figure>
+              <div class="partner-text">
+                <h3 class="subtitle partner-name">Жучки-паучки</h3>
+                <p class="partner-description">
+                  Образовательное антикафе с террариумными животными
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-5">
+            <figure class="partner-photo">
+              <img src="assets/partner-photo-1.jpeg" alt="Фото партнёра">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <div class="container has-text-centered">
+        <h2 class="title contact-text">Напишите нам по адресу:</h2>
+        <a href="mailto:dinobox@example.ru" class="contact-email">dinobox@example.ru</a>
+        <div class="buttons is-centered">
+          <a href="/contact" class="button is-primary is-large">Связаться с нами</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer id="contacts" class="footer">
-        <p class="footer__text">&copy;&nbsp;Orlov T.A. &mdash;&nbsp;2025</p>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>&copy; 2026 Tim Orlov</p>
+      </div>
     </footer>
-    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
-        ↑
-    </button>
-    <script src="src/coffee/scripts/menu.js"></script>
-</body>
+  </body>
 </html>
