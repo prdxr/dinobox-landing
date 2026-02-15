@@ -1,0 +1,13 @@
+:root {
+    /* == COLORS == */
+    /* background */
+    --bulma-scheme-main: #fefefe;
+    --bulma-scheme-invert: #424242;
+    /* primary */
+    --bulma-green: #9cc15a;
+    --bulma-green-light: #c8e296;
+    --bulma-beige: #d1a169;
+    --bulma-beige-light: #e8bf89;
+    /* dark */
+    --bulma-dark: #424242;
+}
