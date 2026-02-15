@@ -42,10 +42,232 @@
     border-radius: 4px;
 }
 
+.navbar-burger {
+    color: var(--bulma-dark)
+}
+
 .has-background-green {
     background-color: var(--bulma-green-light);
 }
 
 .has-background-beige {
     background-color: var(--bulma-beige-light);
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.product-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.product-card .image img {
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+.product-card .title.is-4 {
+  margin-bottom: 0.75rem;
+  color: var(--bulma-dark);
+}
+
+.product-description {
+  font-size: 1rem;
+  color: var(--bulma-dark);
+  line-height: 1.5;
+}
+
+.dots-container {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--bulma-dark);
+  transition: background-color 0.2s;
+}
+
+.dot.is-active {
+  background-color: var(--bulma-green);
+}
+
+.catalog-link-wrapper {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.catalog-link {
+    display: inline-block;
+  font-weight: 600;
+  color: var(--bulma-green);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.catalog-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.tabs-image {
+  margin-bottom: 1rem;
+}
+
+.tabs-image img {
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.vertical-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-item {
+  background-color: var(--bulma-scheme-main);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  border-left: 4px solid transparent; /* место под активную полоску */
+}
+
+.tab-item:hover {
+  background-color: var(--bulma-green);
+}
+
+/* Активный таб */
+.tab-item.is-active {
+  border-left-color: var(--bulma-green);
+  margin-left: 1rem;
+  margin-right: -1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.tab-description {
+  font-size: 0.95rem;
+  color: var(--bulma-dark);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.faq-item {
+  display: block;
+  background-color: var(--bulma-scheme-main);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+}
+
+.faq-triangle {
+  display: inline-block;
+  width: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--bulma-dark);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.faq-question {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--bulma-graphite);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  border-radius: 0 0 12px 12px;
+  padding: 0 1.5rem;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding-bottom: 1.5rem;
+  color: var(--bulma-dark);
+}
+
+.faq-toggle:checked + .faq-header .faq-triangle {
+  transform: rotate(90deg);
+  color: var(--bulma-green);
+}
+
+.faq-toggle:checked ~ .faq-answer {
+  max-height: 300px;
+}
+
+.faq-more {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.faq-link {
+  font-weight: 600;
+  color: var(--bulma-green);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.faq-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
