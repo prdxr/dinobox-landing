@@ -11,10 +11,10 @@
     <header>
         <nav class="navbar is-fixed-top" role="navigation" aria-label="Основная навигация">
             <div class="navbar-brand">
-                <a class="navbar-item py-0" href="/">
+                <a class="navbar-item py-0" href="/#main">
                     <img src="assets/dinobox-logo.png" alt="Логотип">
                 </a>
-                <a class="navbar-item" href="/">
+                <a class="navbar-item" href="/#main">
                     <span class="title is-5">ДиноБокс</span>
                 </a>
                 <div class="navbar-burger" role="button" aria-label="Меню" aria-expanded="false">
@@ -32,14 +32,69 @@
             </div>
         </nav>
     </header>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+    <section id="main" class="hero is-fullheight">
+      <div class="hero-body has-text-left">
+        <h1 class="title is-1 hero-header">
+          ДиноБокс: модульная система контроля климата
+        </h1>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <div class="container">
+      <h2 class="title is-2 has-text-centered">Что такое ДиноБокс?</h2>
+      
+      <div class="columns is-vcentered">
+        <div class="column">
+          <h3 class="subtitle is-4">Это умная система для ваших питомцев</h3>
+          <p class="py-2">
+            Она представляет собой модульное устройство для автоматизации мониторинга террариумов.
+          </p>
+          <p class="py-2">
+            ДиноБокс измеряет выбранные параметры, например температуру или влажность воздуха, и сохраняет на сервере историю изменения климата.
+          </p>
+          <a href="/about" class="more-link">Подробнее →</a>
+        </div>
+        
+        <div class="column">
+          <figure class="image">
+            <img src="./assets/about-photo.png" alt="Устройство ДиноБокс">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="benefits" class="section has-background-beige">
+      <div class="container">
+      <h2 class="title is-2 has-text-centered">Наши преимущества</h2>
+      <div class="columns">
+        <div class="column">
+          <figure class="image p-5 is-skeleton">
+            <img src="./assets/about-photo.png" aria-label="Комбинируемость">
+          </figure>
+          <h3 class="title is-5 has-text-centered">Комбинируемость</h3>
+          <p>
+            Можно использовать любые комбинации модулей.
+          </p>
+        </div>
+        <div class="column">
+          <figure class="image p-5 is-skeleton">
+            <img src="./assets/about-photo.png" aria-label="Комбинируемость">
+          </figure>
+          <h3 class="title is-5 has-text-centered">Единый интерфейс</h3>
+          <p>
+            Управление устройствами ДиноБокс через веб-панель на десктопе или телефоне.
+          </p>
+        </div>
+        <div class="column">
+          <figure class="image p-5 is-skeleton">
+            <img src="./assets/about-photo.png" aria-label="Комбинируемость">
+          </figure>
+          <h3 class="title is-5 has-text-centered">Масштабируемость</h3>
+          <p>
+            Сервер ДиноБокс поддерживает одновременную работу десятков умных террариумов.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
   </body>

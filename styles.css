@@ -11,3 +11,41 @@
     /* dark */
     --bulma-dark: #424242;
 }
+
+#main {
+    background-image: url('./assets/hero-background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#main .hero-body {
+    position: relative;
+    z-index: 2;
+    align-items: end;
+}
+#main .hero-header {
+    background-color: var(--bulma-green);
+    display: inline-block;
+    padding: 1rem 1rem;
+    margin-bottom: 5rem;
+    color: var(--bulma-scheme-main);
+    border-radius: 4px;
+}
+
+.has-background-green {
+    background-color: var(--bulma-green-light);
+}
+
+.has-background-beige {
+    background-color: var(--bulma-beige-light);
+}
