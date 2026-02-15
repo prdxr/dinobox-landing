@@ -66,6 +66,17 @@ nav {
     background-color: var(--bulma-beige-light);
 }
 
+.pictogram-feature {
+    width: fit-content;
+    height: fit-content;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .carousel-container {
   max-width: 800px;
   margin: 2rem auto;
