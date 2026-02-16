@@ -20,6 +20,29 @@ nav {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding-top: 3.25rem;
+}
+
+.footer {
+  background-color: var(--bulma-dark);
+  padding: 2rem 1.5rem;
+}
+
+.footer p {
+  color: var(--bulma-scheme-main);
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
 #main {
     background-image: url('./assets/hero-background.png');
     background-size: cover;
@@ -169,7 +192,7 @@ nav {
 .guide-image {
   margin-bottom: 1rem;
   width: fit-content;
-  
+
 }
 
 .guide-image img {
@@ -391,15 +414,4 @@ nav {
   border: none;
   color: var(--bulma-scheme-main);
   background-color: var(--bulma-green);
-}
-
-.footer {
-  background-color: var(--bulma-dark);
-  padding: 2rem 1.5rem;
-}
-
-.footer p {
-  color: var(--bulma-scheme-main);
-  font-size: 0.95rem;
-  opacity: 0.8;
 }
