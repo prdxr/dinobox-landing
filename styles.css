@@ -420,3 +420,8 @@ body {
   color: var(--bulma-scheme-main);
   background-color: var(--bulma-green);
 }
+
+.social-link {
+    color: var(--bulma-green);
+    font-weight: 600;
+}
