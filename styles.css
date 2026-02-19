@@ -425,3 +425,15 @@ body {
     color: var(--bulma-green);
     font-weight: 600;
 }
+
+.input.is-danger,
+.textarea.is-danger,
+.select.is-danger select {
+    border-color: #f14668;
+}
+
+.help.is-danger {
+    color: #f14668;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
