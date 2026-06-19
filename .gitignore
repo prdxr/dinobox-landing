@@ -1,0 +1,6 @@
+**/__pycache__
+**/venv
+backend/terrarium.db
+**/node_modules
+**/.env
+
